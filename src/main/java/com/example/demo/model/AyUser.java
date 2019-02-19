@@ -1,15 +1,22 @@
 package com.example.demo.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 /**
  * 用户表
  */
+@Entity
+@Table(name = "ay_user")
 public class AyUser {
     //主键
+    @Id
     private String id;
     //用户名
     private String name;
     //密码
-    private  String password;
+    private String password;
 
     public String getId() {
         return id;
